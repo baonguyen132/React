@@ -5,7 +5,7 @@ import PropTypes from "prop-types";
 
 class List extends Component {
   render() {
-    const listItem = this.props.listItem ?? [];
+    const listItemxx = this.props.listItem ?? [];
     const title = this.props.title ?? "Category";
 
     function handleClick(id) {
@@ -19,7 +19,7 @@ class List extends Component {
       li.classList.toggle("action");
     }
 
-    const listItemLi = listItem.map((item) => (
+    const listItemLi = listItemxx.map((item) => (
       <li
         onClick={() => handleClick(item.id)}
         className="item"

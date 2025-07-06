@@ -11,9 +11,21 @@ db.createCollection(```{nameCollectiom}```)
 *-delete database-*
 db.dropDatabase(```{nameDatabase}```)
 
-*-insert database-*
+*-insert collection-*
 db.**student**.insertOne(**{"name":"A" , "age": 20 , "address": "A" , "dob": new Date("01/01/2019") , "gpa": 4}**)
 db.**student**.insertMany(**[{"name":"B" , "age": 21 , "address": "B" , "dob": new Date("02/02/2019") , "gpa": 3},{"name":"C" , "age": 22 , "address": "C" , "dob": new Date("01/01/2020") , "gpa": 2}]**)
+
+*- update colecttion -*
+
+db.**colecttion**.updateOne({filter},{update})
+db.**colecttion**.updateMany({filter},{update})
+{update}
+>   $set:   {}
+>   $unset: {}
+
+**db.student.updateOne({name: "A"} , {$set:{age: 18}})**
+
+
 
 *-sort & limit-*
 

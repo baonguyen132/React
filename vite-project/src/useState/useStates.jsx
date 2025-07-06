@@ -18,7 +18,7 @@ function UseStates() {
     <>
       <Text>{number}</Text>
       <div>
-        <Button handleOnClick={handleAdd}>Add</Button>
+        <Button handleOnClick={()=>handleAdd()}>Add</Button>
         <Button handleOnClick={handleReset}>Reset</Button>
         <Button handleOnClick={handleMul}>Mul</Button>
       </div>

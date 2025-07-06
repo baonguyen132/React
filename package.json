@@ -3,6 +3,7 @@
     "sass-embedded": "^1.89.2"
   },
   "dependencies": {
-    "prop-types": "^15.8.1"
+    "prop-types": "^15.8.1",
+    "react-router-dom": "^6.30.1"
   }
 }

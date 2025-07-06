@@ -1,10 +1,24 @@
-import React, { Component } from "react";
+// function Button(props) {
+//     // console.log(classs, childrens);
+//     console.log(props.class);
+//     return <button className={props.class}>{props.children}</button>
+// }
 
-class Test extends Component {
-    
-    render(){
-        return <h1>{this.props.children}</h1>
+import { React, Component } from "react";
+
+// export default Button
+
+class Button extends Component {
+    render() {
+
+        const text = this.props.text ?? "default"
+
+        return (
+            <>
+                <h1>{text}</h1>
+            </>
+        )
+        
     }
 }
-
-export default Test
+export default Button 
