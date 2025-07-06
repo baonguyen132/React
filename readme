@@ -2,6 +2,8 @@
 npm create vite@latest
 
 npm install prop-types
+npm install -D sass-embedded
+npm install react-router-dom@6
 
 # MongoDB
 *-create database-*
