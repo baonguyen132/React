@@ -1,0 +1,25 @@
+.item {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px;
+}
+.groupButton {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+.delete {
+    button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+        border: none;
+        background: transparent;
+        cursor: pointer;
+        color: red;
+    }
+}

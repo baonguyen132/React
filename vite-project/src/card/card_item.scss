@@ -1,0 +1,28 @@
+.item {
+    width: 400px;
+    background: white;
+    padding: 0px 30px;
+    border-radius: 10px;
+    box-shadow:2px 5px 15px rgb(255, 223, 223);
+    height: 220px;
+    display: flex;
+    gap: 18px;
+    flex-direction: column;
+    justify-content: center;
+    .icon {
+        height: 50px;
+        width: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(135deg ,  blue, rgb(184, 17, 184) );
+        color: white;
+        font-size: 25px;
+        border-radius: 10px;
+    }
+    p {
+        color: #888;
+        font-weight: 500;
+        font-size: 16px;
+    }
+}
