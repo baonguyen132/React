@@ -27,7 +27,13 @@ db.**colecttion**.updateMany({filter},{update})
 
 **db.student.updateOne({name: "A"} , {$set:{age: 18}})**
 
+*- delete colecttion -*
 
+db.**colection**.deleteOne({filter})
+db.**colection**.deleteMany({filter})
+
+**db.student.deleteOne({ name: "A" });**
+**db.student.deleteMany({ registerDate: { $exists: false } })**
 
 *-sort & limit-*
 
@@ -72,3 +78,9 @@ db.**collection**.find(*{querry}* , *{projection}*)
 | `$not`           | Phủ định điều kiện bên trong | `{ age: { $not: { $gt: 20 } } }` (→ `age <= 20`)           |
 
 db.users.find(**{$and: [{ age: { $gt: 20, $lt: 20} },{ status: "active" }]}**);
+
+
+# Python connect MongoDB
+
+**pip install pymongo**
+
