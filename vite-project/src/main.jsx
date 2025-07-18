@@ -1,10 +1,13 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
+import CallAPI from "./hook/useEffect/call";
+import Routex from "./routes/Routex";
 
-import TodoList from "./todoList/todoList.jsx";
+
+
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <TodoList></TodoList>
+    <Routex></Routex>
   </StrictMode>
 );
